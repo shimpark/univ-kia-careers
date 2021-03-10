@@ -1,7 +1,7 @@
 <!Doctype html>
 <html lang="ko">
     <head>
-        <title>정보 입력 | 회원가입 | 기아 인재채용 블로그</title>
+        <title>정보 입력 | 회원가입 | Kia talent Community</title>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
@@ -11,14 +11,14 @@
         <meta name="description" content="기아의 인재영입을 위한 커뮤니티 사이트">
 
         <meta property="og:type" content="website">
-        <meta property="og:title" content="기아 인재채용 블로그">
+        <meta property="og:title" content="Kia talent Community">
         <meta property="og:description" content="기아의 인재영입을 위한 커뮤니티 사이트">
         <meta property="og:image" content="../../content/images/share.png">
         <meta property="og:image:width" content="600">
         <meta property="og:image:height" content="315">
         <meta property="og:url" content="">
         
-        <meta name="twitter:title" content="기아 인재채용 블로그">
+        <meta name="twitter:title" content="Kia talent Community">
         <meta name="twitter:description" content="기아의 인재영입을 위한 커뮤니티 사이트">
         <meta name="twitter:card" content="summary">
         <meta name="twitter:image" content="../../content/images/share.png">
@@ -73,13 +73,13 @@
                                     </div>
                                     <div class="col2">
                                         <label class="fs18 cmn-form-label" for="joinBirthday">생년월일</label>
-                                        <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="joinBirthday">
+                                        <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="joinBirthday" placeholder="YYYY-MM-DD">
                                     </div>
                                 </div>
                                 <div class="cmn-form-row">
                                     <div class="col2">
                                         <label class="fs18 cmn-form-label" for="joinPhoneNum">연락처</label>
-                                        <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="joinPhoneNum">
+                                        <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="joinPhoneNum" placeholder="000-0000-0000">
                                     </div>
                                     <div class="col2">
                                         <label class="fs18 cmn-form-label">성별</label>
@@ -107,12 +107,50 @@
                                     </div>
                                 </div>
                                 <div class="cmn-form-row">
-                                    <div class="col2">
-                                        <label class="fs18 cmn-form-label" for="interestJob">관심 직무</label>
-                                        <select class="fs18 cmn-form-el cmn-select" id="interestJob">
-                                            <option>관심 직무 선택</option>
-                                        </select>
+                                    <div class="col1">
+                                        <label class="fs18 cmn-form-label">관심 직무</label>
+                                        <ul class="flex-box flex-align__cnt">
+                                            <li class="col25 mo-col100">
+                                                <div class="mb25 cmn-input-chk">
+                                                    <input type="checkbox" id="interestJob1">
+                                                    <label class="fs18" for="interestJob1">관심직무 1</label>
+                                                </div>
+                                            </li>
+                                            <li class="col25 mo-col100">
+                                                <div class="mb25 cmn-input-chk">
+                                                    <input type="checkbox" id="interestJob2">
+                                                    <label class="fs18" for="interestJob2">관심직무 2</label>
+                                                </div>
+                                            </li>
+                                            <li class="col25 mo-col100">
+                                                <div class="mb25 cmn-input-chk">
+                                                    <input type="checkbox" id="interestJob3">
+                                                    <label class="fs18" for="interestJob3">관심직무 3</label>
+                                                </div>
+                                            </li>
+                                            <li class="col25 mo-col100">
+                                                <div class="mb25 cmn-input-chk">
+                                                    <input type="checkbox" id="interestJob4">
+                                                    <label class="fs18" for="interestJob4">관심직무 4</label>
+                                                </div>
+                                            </li>
+                                            <li class="col25 mo-col100">
+                                                <div class="mb25 cmn-input-chk">
+                                                    <input type="checkbox" id="interestJob5">
+                                                    <label class="fs18" for="interestJob5">관심직무 5</label>
+                                                </div>
+                                            </li>
+                                            <li class="col25 mo-col100">
+                                                <div class="mb25 cmn-input-chk">
+                                                    <input type="checkbox" id="interestJob6">
+                                                    <label class="fs18" for="interestJob6">관심직무 6</label>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                        <p class="fs14 fc-red cmn-form-tip__btm">※ 최대 3개까지 선택할 수 있습니다.</p>
                                     </div>
+                                </div> <!-- 0310 zoe 수정 -->
+                                <div class="cmn-form-row">
                                     <div class="col2">
                                         <label class="fs18 cmn-form-label">뉴스레터</label>
                                         <div class="cmn-radio-btn-box">
@@ -127,20 +165,18 @@
                                         </div>
                                         <p class="fs14 fc-red cmn-form-tip__btm">※ 회원 가입 후 개인정보수정  페이지에서 변경 가능합니다.</p>
                                     </div>
-                                </div>
+                                </div> <!-- 0310 zoe 추가 -->
                             </div>
                         </div> <!-- //grid -->
                     </div> <!-- form field -->
                     <div class="apply-pagebtn-area">
                         <div class="grid1170">
-                            <div class="txt-cnt">
-                                <a href="javascript:void(0);" class="fw700 pagelink-btn__lg fc-black"><span class="label" data-label="가입 완료">가입 완료</span></a>
-                            </div>
-                            <div class="pt20 txt-cnt">
-                                <a href="javascript:void(0);" class="fw700 fs18 pagelink-txt-btn">취소</a>
+                            <div class="flex-box flex-spc__cnt">
+                                <a href="javascript:void(0);" class="fw700 pagelink-btn__lg fc-black"><span class="label" data-label="취소">취소</span></a>
+                                <a href="javascript:void(0);" class="fw700 pagelink-btn__lg black"><span class="label" data-label="가입 완료">가입 완료</span></a>
                             </div>
                         </div>
-                    </div> <!-- page link button -->
+                    </div> <!-- page link button (0310 zoe 수정) -->
                 </form>
             </div> <!-- //sub common wrapper -->
         </section>

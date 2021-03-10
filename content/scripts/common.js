@@ -216,3 +216,23 @@ if($("#postSwiper").length > 0) {
         }
     });
 }
+
+//view swiper (0310 zoe 추가)
+if($("#viewSwiper").length > 0) {
+    var postSwiper = new Swiper("#viewSwiper", {
+        slidesPerView: 1,
+        speed: 750,
+        loop: false,
+        navigation: {
+            nextEl: "#postSwiperNext",
+            prevEl: "#postSwiperPrev",
+        },
+        breakpoints: {
+            575.98: {
+                slidesPerView: "auto",
+                spaceBetween: 0,
+                loop: true
+            }
+        }
+    });
+}

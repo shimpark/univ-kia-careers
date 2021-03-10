@@ -269,20 +269,21 @@ Talk
    top: -1.5rem;
    right: 2rem;
    width: 3rem;
-   background-color: #ea0029;
+   background-color: #05141f; /* 0310 zoe 수정 */
    border-radius: 100%;
 }
 .sub-kakaochannel-area {
+    overflow: hidden; /* 0310 zoe 추가 */
     padding: 4rem 0;
     margin-top: 4.25rem;
     color: #fff;
     background-color: #37434c;
 }
-.kakaochannel-phone {
+.kakaochannel-phone { /* 0310 zoe 수정 */
     position: absolute;
-    bottom: -4rem;
+    bottom: -8rem;
     right: 0;
-    width: 42.73%;
+    width: 40.73%;
     font-size: 0;
 }
 
@@ -671,6 +672,10 @@ Search
     .search-tag-wrap .cmn-tag__red:focus {
         background-color: #ea0029;
     }
+    .search-tag-wrap .cmn-tag__green:hover,
+    .search-tag-wrap .cmn-tag__green:focus { /* 0310 zoe 추가 */
+        background-color: #5d7d2b;
+    }
 }
 @media screen and (max-width: 575.98px) {
     .search-tag-wrap [class^="cmn-tag__"] {
@@ -863,13 +868,13 @@ Mypage
     }
 }
 @media screen and (max-width: 575.98px) {
-    .mypool-btn-box {
+    /* .mypool-btn-box {
         position: relative;
         top: auto;
         right: auto;
         justify-content: flex-end;
         padding-bottom: 1.5rem;
-    }
+    } 0310 zoe 삭제 */
     .mypool-ctg {
         padding-top: 2rem;
         width: 10rem;
