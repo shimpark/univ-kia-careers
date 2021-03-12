@@ -34,16 +34,6 @@ header {
     -webkit-transition: background-image .35s ease;
     transition: background-image .35s ease;
 }
-
-/* @media screen and (min-width: 1200px) {
-    header a:focus,
-    header button:focus {
-        outline-color: #fff;
-    }
-    header input:focus {
-        box-shadow: inset 0 0 0 2px #fff;
-    }
-} 0310 zoe 삭제 */
 /* scroll header
 ============================================================*/
 header.scroll {
@@ -91,7 +81,7 @@ web navigation
 .hd-nav-list > li + li {
     padding-left: 2rem;
 }
-.hd-nav-menu { /* 0310 zoe 수정 */
+.hd-nav-menu {
     display: block;
     position: relative;
     font-weight: 700;
@@ -101,7 +91,7 @@ web navigation
     transition: color .35s ease;
     cursor: pointer;
 }
-.hd-nav-menu.active { /* 현재 페이지 메뉴명에 active 클래스 추가 (0310 zoe 추가) */
+.hd-nav-menu.active { /* 현재 페이지 메뉴명에 active 클래스 추가 */
     border-color: #fff;
 }
 .hd-nav-menu__login,
@@ -120,6 +110,7 @@ web navigation
     width: 10rem;
     background-color: #fff;
     border-radius: 1rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07); /* 0312 zoe 추가 */
 }
 .hd-mymenu-btn__close {
     display: inline-block;
@@ -539,7 +530,7 @@ footer {
 .ft-info {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row-reverse; /* 0310 zoe 수정 */
+    flex-direction: row-reverse;
     justify-content: space-between;
     align-items: center;
 }
@@ -681,12 +672,6 @@ common button
     padding: 1.25rem 0;
     width: 100%;
 }
-/* [class*="pagelink-btn__"] .label {
-    display: block;
-    position: relative;
-    -webkit-transform: translateX(0);
-    transform: translateX(0);
-} 0310 zoe 삭제 */
 [class*="pagelink-btn__"].fc-black {
     border-color: #05141f;
 }
@@ -697,42 +682,7 @@ common button
     display: inline-block;
 }
 
-/* @-webkit-keyframes marquee {
-    0%{
-        -webkit-transform:translateX(0);
-        transform:translateX(0);
-    }
-    to{
-        -webkit-transform:translateX(calc(80%));transform:translateX(calc(80%));
-    }
-}
-@keyframes marquee {
-    0%{
-        -webkit-transform:translateX(0);;
-        transform:translateX(0);
-    }
-    to{
-        -webkit-transform:translateX(calc(80%));transform:translateX(calc(80%));
-    }
-} 0310 zoe 삭제 */
-
 @media screen and (min-width: 1200px) {
-    /* [class*="pagelink-btn__"]:hover .label,
-    [class*="pagelink-btn__"]:focus .label {
-        -webkit-animation: marquee 2.5s infinite linear;
-        animation: marquee 2.5s infinite linear;
-    }
-    [class*="pagelink-btn__"] .label:before {
-        content: attr(data-label);
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-transform: translateX(calc(-80%));
-        transform: translateX(calc(-80%));
-    } 0310 zoe 삭제 */
-    /* 0310 zoe 수정 및 추가 시작 */
     [class*="pagelink-btn__"] {
         -webkit-transition: color .25s ease, border-color .25s ease, background-color .25s ease, box-shadow .25s ease;
         transition: color .25s ease, border-color .25s ease, background-color .25s ease, box-shadow .25s ease;
@@ -753,7 +703,6 @@ common button
         color: #fff;
         box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.5);
     }
-    /* 0310 zoe 수정 및 추가 끝 */
     .pagelink-txt-btn:hover,
     .pagelink-txt-btn:focus {
         border-bottom: 2px solid #05141f;
@@ -862,13 +811,12 @@ body.full {
 .alert-modal-area [class^="modal-wrap__"] {
     overflow: hidden;
     width: 23rem;
-    /* border-radius: 2rem; 0310 zoe 삭제 */
 }
 .alert-modal-area .close-modal-btn {
     top: 1.25rem;
     right: 1.25rem;
     width: 1.5rem;
-    height: 1.5rem; /* 0310 zoe 추가 */
+    height: 1.5rem;
 }
 .alert-modal-area .close-modal-btn::before,
 .alert-modal-area .close-modal-btn::after {
@@ -876,7 +824,7 @@ body.full {
     background-color: #05141f;
 }
 .alert-modal-area .modal-cont {
-    padding: 3.5rem 2rem 2.75rem; /* 0310 zoe 수정 */
+    padding: 3.5rem 2rem 2.75rem;
     text-align: center;
     background-color: #fff;
 }
@@ -900,7 +848,7 @@ body.full {
     padding: 1.5rem 0;
     top: auto !important;
     right: auto !important;
-    height: auto !important; /* 0310 zoe 추가 */
+    height: auto !important;
     font-weight: 700;
     line-height: 1;
     text-align: center;
@@ -928,7 +876,7 @@ body.full {
     .alert-modal-area [class*="modal-btn__"] {
         padding: 1.75rem 0;
     }
-    .alert-modal-area .close-modal-btn { /* 0310 zoe 수정 */
+    .alert-modal-area .close-modal-btn {
         top: 1.5rem;
         right: 2rem;
         width: 2rem;
@@ -973,7 +921,7 @@ common tag
     background-color: #fef2f4;
     border-color: #ea0029;
 }
-.cmn-tag__green { /* 0310 zoe 추가 */
+.cmn-tag__green {
     color: #5d7d2b;
     background-color: #eef2e9;
     border-color: #5d7d2b;
@@ -999,7 +947,7 @@ common tag
         background-color: #ea0029;
     }
     .cmn-tag__green:hover,
-    .cmn-tag__green:focus { /* 0310 zoe 추가 */
+    .cmn-tag__green:focus {
         color: #fff;
         background-color: #5d7d2b;
     }
@@ -1014,7 +962,7 @@ common tag
         background-color: #fef2f4;
     }
     .cmn-list .cmn-tag__green:hover,
-    .cmn-list .cmn-tag__green:focus { /* 0310 zoe 추가 */
+    .cmn-list .cmn-tag__green:focus {
         color: #5d7d2b;
         background-color: #eef2e9;
     }
@@ -1086,7 +1034,7 @@ common card list
 .cmn-list-info__link {
     display: block;
 }
-.cmn-list-info__tit { /* 0310 zoe 수정 */
+.cmn-list-info__tit {
     font-weight: 100;
 }
 .cmn-list-info__tit.txt-elp__multi { 
@@ -1101,7 +1049,7 @@ common card list
     -webkit-line-clamp: 2;
     max-height: 2.3rem;
 }
-.cmn-list-info__txt.txt-elp__multi.line3 { /* 0310 zoe 추가 */
+.cmn-list-info__txt.txt-elp__multi.line3 {
     -webkit-line-clamp: 3;
     max-height: 3.5rem;
 }
@@ -1161,7 +1109,7 @@ common card list
     .cmn-list-item.col3:nth-child(3) {
         margin-top: 2.5rem;
     }
-    .cmn-list-info__tit.txt-elp__multi { /* 0310 zoe 수정 */
+    .cmn-list-info__tit.txt-elp__multi {
         max-height: 4.3rem;
     }
     .cmn-list-info__txt {
@@ -1170,7 +1118,7 @@ common card list
     .cmn-list-info__txt.txt-elp__multi {
         max-height: 3.6rem;
     }
-    .cmn-list-info__txt.txt-elp__multi.line3 { /* 0310 zoe 추가 */
+    .cmn-list-info__txt.txt-elp__multi.line3 {
         max-height: 5.5rem;
     }
     .cmn-list-info__date {
@@ -1244,12 +1192,12 @@ common swiper slide
         -webkit-transform: translateY(-10px);
         transform: translateY(-10px);
     }
-    #viewSwiper .post-swiper-item [class^="cmn-list-link__"] { /* 0310 zoe 추가 */
+    #viewSwiper .post-swiper-item [class^="cmn-list-link__"] {
         -webkit-transition: box-shadow .35s ease;
         transition: box-shadow .35s ease;
     }
     #viewSwiper .post-swiper-item [class^="cmn-list-link__"]:hover,
-    #viewSwiper .post-swiper-item [class^="cmn-list-link__"]:focus { /* 0310 zoe 추가 */
+    #viewSwiper .post-swiper-item [class^="cmn-list-link__"]:focus {
         -webkit-transform: translateY(0);
         transform: translateY(0);
     }
@@ -1399,7 +1347,7 @@ common form
     width: 8rem;
 }
 .cmn-form-btn button,
-.cmn-form-btn a { /* 0310 zoe 수정 */
+.cmn-form-btn a {
     display: block;
     width: 100%;
     height: 3rem;
@@ -1429,16 +1377,16 @@ input[value="false"] + .cmn-form-el + [class*="cmn-form-tip__"] {
 ============================================================*/
 .cmn-input-txt,
 .cmn-input-pw {
-    padding: 0 1rem; /* 0310 zoe 수정 */
+    padding: 0 1rem;
     height: 3rem;
     line-height: 3rem;
 }
 .cmn-select {
-    padding: 0 4.5rem 0 1rem; /* 0310 zoe 수정 */
+    padding: 0 4.5rem 0 1rem;
     height: 3rem;
     line-height: 3rem;
     background-repeat: no-repeat;
-    background-position: center right 1.5rem; /* 0310 zoe 수정 */
+    background-position: center right 1.5rem;
     background-image: url("../images/common/form-select-arw.png");
     background-size: 0.5rem;
 }
@@ -1449,7 +1397,7 @@ input[value="false"] + .cmn-form-el + [class*="cmn-form-tip__"] {
     position: relative;
 }
 .cmn-txtarea {
-    padding: 1rem; /* 0310 zoe 수정 */
+    padding: 1rem;
     height: 10rem;
 }
 .cmn-txtarea-counter {
@@ -1571,7 +1519,7 @@ input[value="false"] + .cmn-form-el + [class*="cmn-form-tip__"] {
     .cmn-form-btn button,
     .cmn-form-btn a,
     .cmn-input-txt,
-    .cmn-input-pw { /* 0310 zoe 수정 */
+    .cmn-input-pw {
         height: 4rem;
         line-height: 4rem;
     }
