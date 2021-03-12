@@ -110,7 +110,7 @@ web navigation
     width: 10rem;
     background-color: #fff;
     border-radius: 1rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07); /* 0312 zoe 추가 */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
 }
 .hd-mymenu-btn__close {
     display: inline-block;
@@ -199,6 +199,20 @@ web navigation
     background-size: 100%;
     -webkit-transition: background-image .35s ease;
     transition: background-image .35s ease;
+}
+.hd-search-recommend-list { /* 0312 zoe 3차 추가 */
+    display: none;
+    position: absolute;
+    top: 2.5rem;
+    right: 0;
+    padding: 1.5rem;
+    width: 12rem;
+    background-color: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.07);
+}
+.hd-search-recommend-list li { /* 0312 zoe 3차 추가 */
+    padding: 5px 0;
 }
 
 .scroll .hd-nav-menu {
@@ -308,6 +322,9 @@ mobile navigation & mobile search
         -webkit-transition: background-image .35s ease;
         transition: background-image .35s ease;
     }
+    .mo-search { /* 0312 zoe 3차 추가 */
+        position: relative;
+    }
     .mo-search-btn__open {
         display: block;
         position: absolute;
@@ -331,6 +348,19 @@ mobile navigation & mobile search
         background-image: url("../images/common/header-close-ico-white.png");
         -webkit-transition: background-image .35s ease;
         transition: background-image .35s ease;
+    }
+    .mo-search-recommend-list { /* 0312 zoe 3차 추가 */
+        display: none;
+        position: absolute;
+        top: 4.25rem;
+        left: 1.25rem;
+        padding: 1.5rem 1.25rem;
+        width: calc(100% - 2.5rem);
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
+    }
+    .mo-search-recommend-list li { /* 0312 zoe 3차 추가 */
+        padding: 5px 0;
     }
     .mo-nav {
         position: fixed;

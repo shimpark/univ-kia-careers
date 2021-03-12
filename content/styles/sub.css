@@ -221,9 +221,14 @@ view
     .view-hd-btn__good:focus {
         box-shadow: inset 4px 4px 3px rgba(0, 0, 0, 0.35);
     }
-    .view-tag-list [class^="cmn-tag__"]:hover,
+    /* .view-tag-list [class^="cmn-tag__"]:hover,
     .view-tag-list [class^="cmn-tag__"]:focus {
         background-color: #ea0029;
+    } 0312 zoe 3차 삭제 */
+    .view-tag-list .cmn-tag__grey:hover,
+    .view-tag-list .cmn-tag__grey:focus { /* 0312 zoe 3차 수정 */
+        color: #9ba1a5;
+        background-color: #f5f5f6;
     }
 }
 @media screen and (max-width: 575.98px) {
@@ -492,11 +497,11 @@ Talent Pool
 ============================================================*/
 /* gate
 ============================================================*/
-#talentPoolGate  { /* 0312 zoe 2차 추가 */
+#talentPoolGate  {
     background: url("../images/sub/talentpool-bg.jpg") no-repeat center;
     background-size: cover;
 }
-#talentPoolGate .sub-cmn-wrapper { /* 0312 zoe 2차 추가 */
+#talentPoolGate .sub-cmn-wrapper {
     background-color: transparent;
 }
 .talentpool-gate-hd {
@@ -512,7 +517,7 @@ Talent Pool
 .talentpool-gate-list li:last-child {
     margin-right: 0;
 }
-.talentpool-gate-btn { /* 0312 zoe 2차 수정 */
+.talentpool-gate-btn {
     display: block;
     padding: 1.25rem 0;
     font-weight: 700;
@@ -697,11 +702,11 @@ Login & Join
 ============================================================*/
 /* gate
 ============================================================*/
-#memberGate { /* 0312 zoe 2차 추가 */
+#memberGate {
     background: url("../images/sub/login-bg.jpg") no-repeat center;
     background-size: cover;
 }
-#memberGate .sub-cmn-wrapper { /* 0312 zoe 2차 추가 */
+#memberGate .sub-cmn-wrapper {
     background-color: transparent;
 }
 .member-gate {
@@ -711,7 +716,7 @@ Login & Join
     align-items: center;
     padding: 11rem 0 6rem;
 }
-.member-gate-intro { /* 0312 zoe 2차 수정 */
+.member-gate-intro {
     width: 50%;
     color: #fff;
 }

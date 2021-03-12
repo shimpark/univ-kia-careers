@@ -50,14 +50,13 @@ function scrollHd() {
 //pc navigation
 function pcNav() {
     if (mqWeb.matches) {
-
         $("header").on("click",".hd-search-btn__open", function(e){
             e.preventDefault();
 
             $(e.target).hide();
             $(".hd-search-btn__enter").show();
             $(".hd-search-input").addClass("active");
-            $(".hd-search-input").find("input[type='text']").focus();
+            // $(".hd-search-input").find("input[type='text']").focus(); 0312 zoe 3차 주석 처리
         });
         $("header").on("click", ".hd-search-btn__close", "clicked", function(e) {
             e.preventDefault();
@@ -76,12 +75,19 @@ function pcNav() {
 
             $(".hd-mymenu-box").hide();
         });
-
         $(".hd-nav-menu__user").keydown(function (e) {
             var code = e.keyCode || e.which;
     
             if (code === 13) {
                 $(".hd-mymenu-btn__close").focus();
+            }
+        });
+        //0312 zoe 3차 추가
+        $("header").on("keydown", ".hd-search-input input", function(){
+            $(".hd-search-recommend-list").show();
+
+            if( !$(this).val() ) {
+                $(".hd-search-recommend-list").hide();
             }
         });
     }
@@ -116,6 +122,14 @@ if (window.matchMedia("screen and (max-width: 1199.98px)").matches) {
         e.preventDefault();
         $(e.target).find(".more-ico").toggleClass("active");
         $(".mo-mymenu-box").slideToggle(350);
+    });
+    //0312 zoe 3차 추가
+    $("header").on("keydown", ".mo-search-input input", function(){
+        $(".mo-search-recommend-list").show();
+
+        if( !$(this).val() ) {
+            $(".mo-search-recommend-list").hide();
+        }
     });
 }
 
@@ -217,7 +231,7 @@ if($("#postSwiper").length > 0) {
     });
 }
 
-//view swiper (0310 zoe 추가)
+//view swiper
 if($("#viewSwiper").length > 0) {
     var postSwiper = new Swiper("#viewSwiper", {
         slidesPerView: 1,
