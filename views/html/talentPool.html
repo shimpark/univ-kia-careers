@@ -35,17 +35,17 @@
     </head>
     <body>
         <!-- header START -->
-        <header id="scrollHd" class="scroll"></header>
+        <header></header> <!-- 0312 zoe 2차 수정 : class 변경 -->
         <!-- //header END -->
         <!-- sub page START -->
-        <section>
+        <section id="talentPoolGate"> <!-- 0312 zoe 2차 수정 : id값 추가 -->
             <div class="talentpool-gate-hd">
                 <div class="grid1170">
-                    <h2 class="fs70">Talent Pool</h2>
-                    <p class="fs18 cmn-txt">인재풀에 등록된 지원서는<br><span class="txt-break__mo">직무별 영입 수요가 발생할 때</span> 우선적으로 검토되며,<br><span class="txt-break__mo">특정 직무에 적합한 경우</span> 개별 연락 후 영입 절차가 진행됩니다.<br><strong class="fw100 fc-red">인재풀은 최대 3개의 부문까지 <span class="txt-break__mo">등록할 수 있습니다.</span></strong></p>
-                </div> <!-- //grid -->
+                    <h2 class="fs70 fc-white">Talent Pool</h2>
+                    <p class="fs18 fc-white cmn-txt">인재풀에 등록된 지원서는<br><span class="txt-break__mo">직무별 영입 수요가 발생할 때</span> 우선적으로 검토되며,<br><span class="txt-break__mo">특정 직무에 적합한 경우</span> 개별 연락 후 영입 절차가 진행됩니다.<br><strong class="fw100">인재풀은 최대 3개의 부문까지 <span class="txt-break__mo">등록할 수 있습니다.</span></strong></p>
+                </div> <!-- //grid (0312 zoe 2차 수정 : class 변경) -->
             </div>
-            <div class="white sub-cmn-wrapper">
+            <div class="sub-cmn-wrapper"> <!-- 0312 zoe 2차 수정 : class 변경 -->
                 <div class="sub-cmn-area">
                     <div class="grid1170">
                         <ul class="flex-box talentpool-gate-list">
@@ -60,12 +60,12 @@
                             <li><a href="javascript:void(0);" onclick="clickModal(this)" data-modal="alertPoolMaxModal" class="fs18 talentpool-gate-btn">직무 예시 4</a></li>
                             <li><a href="javascript:void(0);" onclick="clickModal(this)" data-modal="alertPoolDoneModal" class="fs18 talentpool-gate-btn">직무 예시 5</a></li>
                         </ul>
-                        <div class="pt20 pb40 txt-cnt">
-                            <a href="myPool.html" class="fw700 pagelink-btn__lg fc-black"><span class="label" data-label="등록한 지원서 수정하기">등록한 지원서 수정하기</span></a>
+                        <div class="pt20 pb50 txt-cnt"> <!-- 0312 zoe 2차 수정 : class 변경 -->
+                            <a href="myPool.html" class="fw700 pagelink-btn__lg"><span class="label" data-label="등록한 지원서 수정하기">등록한 지원서 수정하기</span></a> <!-- 0312 zoe 2차 수정 : class 변경 -->
                         </div>
                     </div> <!-- //grid -->
                 </div> <!-- //Talent Pool -->
-            </div> <!-- //sub common wrapper -->
+            </div> <!-- //sub common wrappe -->
         </section>
         <!-- //sub page END -->
         <!-- footer START -->
@@ -76,7 +76,7 @@
             <div class="modal-wrap__abs">
                 <button class="close-modal-btn"><span class="txt-hidden">Talent Pool 레이어 팝업 닫기</span></button>
                 <div class="modal-cont">
-                    <h3 class="pb0 fs30 modal-tit">이미 ICT 부문<br>인재풀에 등록하셨습니다.</h3> <!-- 0310 zoe 수정 -->
+                    <h3 class="pb0 fs30 modal-tit">이미 ICT 부문<br>인재풀에 등록하셨습니다.</h3>
                 </div>
                 <div class="modal-btn-wrap">
                     <a href="myPool.html" class="red fs24 modal-btn__col1">인재풀에 등록한 지원서 확인하기</a>
@@ -87,7 +87,7 @@
             <div class="modal-wrap__abs">
                 <button class="close-modal-btn"><span class="txt-hidden">Talent Pool 레이어 팝업 닫기</span></button>
                 <div class="modal-cont">
-                    <h3 class="fs30 modal-tit">이미 3개의 부문에<br>인재풀에 등록하셨습니다.</h3> <!-- 0310 zoe 수정 -->
+                    <h3 class="fs30 modal-tit">이미 3개의 부문에<br>인재풀에 등록하셨습니다.</h3>
                     <div class="fs18 modal-txt">
                         <p>추가 등록을 원하시는 경우,<br><span class="txt-break__mo">기존에 등록한 지원서를</span> 삭제해주시기 바랍니다.</p>
                     </div>

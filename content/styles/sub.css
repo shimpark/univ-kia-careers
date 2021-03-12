@@ -269,17 +269,17 @@ Talk
    top: -1.5rem;
    right: 2rem;
    width: 3rem;
-   background-color: #05141f; /* 0310 zoe 수정 */
+   background-color: #05141f;
    border-radius: 100%;
 }
 .sub-kakaochannel-area {
-    overflow: hidden; /* 0310 zoe 추가 */
+    overflow: hidden;
     padding: 4rem 0;
     margin-top: 4.25rem;
     color: #fff;
     background-color: #37434c;
 }
-.kakaochannel-phone { /* 0310 zoe 수정 */
+.kakaochannel-phone {
     position: absolute;
     bottom: -8rem;
     right: 0;
@@ -492,6 +492,13 @@ Talent Pool
 ============================================================*/
 /* gate
 ============================================================*/
+#talentPoolGate  { /* 0312 zoe 2차 추가 */
+    background: url("../images/sub/talentpool-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+#talentPoolGate .sub-cmn-wrapper { /* 0312 zoe 2차 추가 */
+    background-color: transparent;
+}
 .talentpool-gate-hd {
     padding-top: 10rem;
     text-align: center;
@@ -505,12 +512,14 @@ Talent Pool
 .talentpool-gate-list li:last-child {
     margin-right: 0;
 }
-.talentpool-gate-btn {
+.talentpool-gate-btn { /* 0312 zoe 2차 수정 */
     display: block;
     padding: 1.25rem 0;
     font-weight: 700;
     line-height: 1;
     text-align: center;
+    color: #fff;
+    background-color: rgba(255, 255, 255, 0.2);
     border-radius: 4rem;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
@@ -673,7 +682,7 @@ Search
         background-color: #ea0029;
     }
     .search-tag-wrap .cmn-tag__green:hover,
-    .search-tag-wrap .cmn-tag__green:focus { /* 0310 zoe 추가 */
+    .search-tag-wrap .cmn-tag__green:focus {
         background-color: #5d7d2b;
     }
 }
@@ -688,6 +697,13 @@ Login & Join
 ============================================================*/
 /* gate
 ============================================================*/
+#memberGate { /* 0312 zoe 2차 추가 */
+    background: url("../images/sub/login-bg.jpg") no-repeat center;
+    background-size: cover;
+}
+#memberGate .sub-cmn-wrapper { /* 0312 zoe 2차 추가 */
+    background-color: transparent;
+}
 .member-gate {
     display: flex;
     flex-wrap: wrap;
@@ -695,8 +711,9 @@ Login & Join
     align-items: center;
     padding: 11rem 0 6rem;
 }
-.member-gate-intro {
+.member-gate-intro { /* 0312 zoe 2차 수정 */
     width: 50%;
+    color: #fff;
 }
 .member-gate .sub-hd h2 {
     line-height: 1.2;
@@ -868,13 +885,6 @@ Mypage
     }
 }
 @media screen and (max-width: 575.98px) {
-    /* .mypool-btn-box {
-        position: relative;
-        top: auto;
-        right: auto;
-        justify-content: flex-end;
-        padding-bottom: 1.5rem;
-    } 0310 zoe 삭제 */
     .mypool-ctg {
         padding-top: 2rem;
         width: 10rem;
