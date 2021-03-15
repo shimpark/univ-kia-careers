@@ -91,9 +91,6 @@ web navigation
     transition: color .35s ease;
     cursor: pointer;
 }
-.hd-nav-menu.active { /* 현재 페이지 메뉴명에 active 클래스 추가 */
-    border-color: #fff;
-}
 .hd-nav-menu__login,
 .hd-nav-menu__user {
     padding-left: 2rem;
@@ -200,7 +197,7 @@ web navigation
     -webkit-transition: background-image .35s ease;
     transition: background-image .35s ease;
 }
-.hd-search-recommend-list { /* 0312 zoe 3차 추가 */
+.hd-search-recommend-list {
     display: none;
     position: absolute;
     top: 2.5rem;
@@ -211,7 +208,7 @@ web navigation
     border-radius: 1rem;
     box-shadow: 0 0 10px rgb(0, 0, 0, 0.07);
 }
-.hd-search-recommend-list li { /* 0312 zoe 3차 추가 */
+.hd-search-recommend-list li {
     padding: 5px 0;
 }
 
@@ -246,7 +243,8 @@ web navigation
     .hd-nav-menu__user {
         border-bottom: 0;
     }
-    .hd-nav-menu:hover {
+    .hd-nav-menu:hover,
+    .hd-nav-menu.active { /* 0315 zoe 수정 */
         border-color: #fff;
     }
     .hd-search-input {
@@ -259,7 +257,8 @@ web navigation
     .hd-mymenu.fc-lightbluegrey:hover {
         border-color: #9ba1a5;
     }
-    .scroll .hd-nav-menu:hover {
+    .scroll .hd-nav-menu:hover,
+    .scroll .hd-nav-menu.active { /* 0315 zoe 수정 */
         border-color: #05141f;
     }
 }
@@ -322,7 +321,7 @@ mobile navigation & mobile search
         -webkit-transition: background-image .35s ease;
         transition: background-image .35s ease;
     }
-    .mo-search { /* 0312 zoe 3차 추가 */
+    .mo-search {
         position: relative;
     }
     .mo-search-btn__open {
@@ -349,7 +348,7 @@ mobile navigation & mobile search
         -webkit-transition: background-image .35s ease;
         transition: background-image .35s ease;
     }
-    .mo-search-recommend-list { /* 0312 zoe 3차 추가 */
+    .mo-search-recommend-list {
         display: none;
         position: absolute;
         top: 4.25rem;
@@ -359,7 +358,7 @@ mobile navigation & mobile search
         background-color: #fff;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.07);
     }
-    .mo-search-recommend-list li { /* 0312 zoe 3차 추가 */
+    .mo-search-recommend-list li {
         padding: 5px 0;
     }
     .mo-nav {
