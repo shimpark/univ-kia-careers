@@ -244,7 +244,7 @@ web navigation
         border-bottom: 0;
     }
     .hd-nav-menu:hover,
-    .hd-nav-menu.active { /* 0315 zoe 수정 */
+    .hd-nav-menu.active {
         border-color: #fff;
     }
     .hd-search-input {
@@ -258,7 +258,7 @@ web navigation
         border-color: #9ba1a5;
     }
     .scroll .hd-nav-menu:hover,
-    .scroll .hd-nav-menu.active { /* 0315 zoe 수정 */
+    .scroll .hd-nav-menu.active {
         border-color: #05141f;
     }
 }
@@ -1316,8 +1316,20 @@ common form
 ============================================================*/
 /* common form layout
 ============================================================*/
-.cmn-form-area {
-    padding: 3rem 0;
+.cmn-form-area { /* 0315 2차 zoe 수정 */
+    position: relative;
+    padding: 5rem 0;
+}
+.cmn-form-area + .cmn-form-area::before { /* 0315 2차 zoe 추가 */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 1170px;
+    height: 1px;
+    background-color: #9ba1a5;
 }
 .cmn-form-wrap__col {
     display: flex;
@@ -1350,6 +1362,12 @@ common form
     display: block;
     padding-bottom: 0.75rem;
     font-weight: 100;
+}
+
+@media screen and (max-width: 575.98px) { /* 0315 2차 zoe 추가 */
+    .cmn-form-area + .cmn-form-area::before {
+        width: calc(100% - 60px);
+    }
 }
 /* common form element
 ============================================================*/

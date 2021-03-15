@@ -60,7 +60,7 @@
                                     <dd class="cmn-form-field">
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="academicBg">학력</label>
+                                                <label class="fs14 cmn-form-label" for="academicBg">학력</label>
                                                 <select class="fs18 cmn-form-el cmn-select" id="academicBg">
                                                     <option>학력 선택</option>
                                                     <option>대학원 졸업</option>
@@ -68,55 +68,58 @@
                                                     <option>고등학교 졸업</option>
                                                 </select>
                                             </div>
-                                        </div>
-                                        <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="schoolName">학교명</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="schoolName">
-                                            </div>
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="major">전공</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="major">
-                                            </div>
-                                        </div>
-                                        <div class="cmn-form-row">
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="GPA">평점</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="GPA">
-                                            </div>
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="totalGrade">총점</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="totalGrade">
-                                            </div>
-                                        </div>
-                                        <div class="cmn-form-row">
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="admissionDate">입학연월</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="admissionDate">
-                                            </div>
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="graduationDate">졸업연월</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="graduationDate">
-                                            </div>
-                                        </div>
-                                        <div class="cmn-form-row">
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="GraduationStatus">졸업상태</label>
+                                                <label class="fs14 cmn-form-label" for="GraduationStatus">졸업상태</label>
                                                 <select class="fs18 cmn-form-el cmn-select" id="GraduationStatus">
                                                     <option>졸업상태 선택</option>
                                                 </select>
                                             </div>
                                         </div>
                                         <div class="cmn-form-row">
-                                            <div class="col1">
-                                                <button class="fs16 apply-control-btn">추가</button>
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="schoolName">학교명</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="schoolName">
                                             </div>
-                                        </div> <!-- 0310 zoe 추가 -->
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="major">전공</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="major">
+                                            </div>
+                                        </div>
+                                        <div class="cmn-form-row">
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="GPA">평점</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="GPA">
+                                            </div>
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="totalGrade">총점</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="totalGrade">
+                                            </div>
+                                        </div>
+                                        <div class="cmn-form-row">
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="admissionDate">입학연월</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="admissionDate">
+                                            </div>
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="graduationDate">졸업연월</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="graduationDate">
+                                            </div>
+                                        </div>
                                     </dd>
                                 </dl>
                             </div> <!-- //grid -->
                         </div> <!-- 추가 기능이 있는 폼 영역 : 기본 -->
-                    </div> <!-- //apply area : 학력정보 (0310 zoe 수정) -->
+                        <div class="apply-control-btn-box">
+                            <div class="grid1170">
+                                <dl class="cmn-form-wrap__col">
+                                    <dt class="fs24 cmn-form-tit"><span class="txt-hidden">추가 버튼 영역</span></dt>
+                                    <dd class="cmn-form-field">
+                                        <button class="fs16 apply-control-btn">학력정보 추가</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div> <!-- // 추가 버튼 영역 (0315 2차 zoe 추가) -->
+                    </div> <!-- //apply area : 학력정보 -->
                     <div class="cmn-form-area apply-add-area">
                         <div class="apply-add-wrap">
                             <div class="grid1170">
@@ -135,14 +138,14 @@
                                                         <label class="fs18" for="careerNo">없음</label>
                                                     </div>
                                                 </div>
-                                            </div> <!-- 0310 zoe 수정 -->
+                                            </div>
                                             <div class="col1">
                                                 <p class="fs16 cmn-form-tip__btm">아르바이트 및 증빙이 불가능한 경력만 있을 경우 [없음]을 체크해주세요.</p>
-                                            </div> <!-- 0310 zoe 추가 -->
+                                            </div>
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="corpName">회사명</label>
+                                                <label class="fs14 cmn-form-label" for="corpName">회사명</label>
                                                 <input type="hidden" value="false">
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="corpName">
                                                 <p class="fs14 cmn-form-tip__btm">회사명을 입력해주세요.</p>
@@ -150,89 +153,90 @@
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="employeeType">직원 유형</label>
+                                                <label class="fs14 cmn-form-label" for="employeeType">직원 유형</label>
                                                 <select class="fs18 cmn-form-el cmn-select" id="employeeType">
                                                     <option>직원 유형 선택</option>
                                                 </select>
                                             </div>
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="position">직급</label>
+                                                <label class="fs14 cmn-form-label" for="position">직급</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="position">
                                             </div>
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="joinDate">입사일</label>
+                                                <label class="fs14 cmn-form-label" for="joinDate">입사일</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="joinDate">
                                             </div>
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="resignationDate">퇴사일</label>
+                                                <label class="fs14 cmn-form-label" for="resignationDate">퇴사일</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="resignationDate">
                                             </div>
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col1">
-                                                <label class="fs18 cmn-form-label" for="assignedTask">담당업무</label>
+                                                <label class="fs14 cmn-form-label" for="assignedTask">담당업무</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="assignedTask">
                                             </div>
-                                        </div> <!-- 0310 zoe 수정 -->
-                                        <div class="cmn-form-row">
-                                            <div class="col1">
-                                                <button class="fs16 apply-control-btn">추가</button>
-                                            </div>
-                                        </div> <!-- 0310 zoe 추가 -->
+                                        </div>
                                     </dd>
                                 </dl>
                             </div> <!-- //grid -->
                         </div> <!-- 추가 기능이 있는 폼 영역 : 기본 -->
                         <div class="apply-add-wrap added">
                             <div class="grid1170">
+                                <button class="fs16 apply-control-btn">삭제</button> <!-- 0315 2차 zoe 수정 -->
                                 <dl class="cmn-form-wrap__col">
                                     <dt class="fs24 cmn-form-tit"><span class="txt-hidden">경력사항 (추가1)</span></dt>
                                     <dd class="cmn-form-field">
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="corpNameAdd1">회사명</label>
+                                                <label class="fs14 cmn-form-label" for="corpNameAdd1">회사명</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="corpNameAdd1">
                                             </div>
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="employeeTypeAdd1">직원 유형</label>
+                                                <label class="fs14 cmn-form-label" for="employeeTypeAdd1">직원 유형</label>
                                                 <select class="fs18 cmn-form-el cmn-select" id="employeeTypeAdd1">
                                                     <option>직원 유형 선택</option>
                                                 </select>
                                             </div>
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="positionAdd1">직급</label>
+                                                <label class="fs14 cmn-form-label" for="positionAdd1">직급</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="positionAdd1">
                                             </div>
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="joinDateAdd1">입사일</label>
+                                                <label class="fs14 cmn-form-label" for="joinDateAdd1">입사일</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="joinDateAdd1">
                                             </div>
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="resignationDateAdd1">퇴사일</label>
+                                                <label class="fs14 cmn-form-label" for="resignationDateAdd1">퇴사일</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="resignationDateAdd1">
                                             </div>
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col1">
-                                                <label class="fs18 cmn-form-label" for="assignedTaskAdd1">담당업무</label>
+                                                <label class="fs14 cmn-form-label" for="assignedTaskAdd1">담당업무</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="assignedTaskAdd1">
                                             </div>
-                                        </div> <!-- 0310 zoe 수정 -->
-                                        <div class="cmn-form-row">
-                                            <div class="col1">
-                                                <button class="fs16 apply-control-btn">삭제</button>
-                                            </div>
-                                        </div> <!-- 0310 zoe 추가 -->
+                                        </div>
                                     </dd>
                                 </dl>
                             </div> <!-- //grid -->
                         </div> <!-- 추가 기능이 있는 폼 영역 : 추가 -->
+                        <div class="apply-control-btn-box">
+                            <div class="grid1170">
+                                <dl class="cmn-form-wrap__col">
+                                    <dt class="fs24 cmn-form-tit"><span class="txt-hidden">추가 버튼 영역</span></dt>
+                                    <dd class="cmn-form-field">
+                                        <button class="fs16 apply-control-btn">경력사항 추가</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div> <!-- // 추가 버튼 영역 (0315 2차 zoe 추가) -->
                     </div> <!-- //apply add area : 경력사항 -->
                     <div class="cmn-form-area apply-add-area">
                         <div class="apply-add-wrap">
@@ -256,56 +260,59 @@
                                             <div class="col1">
                                                 <p class="fs16 cmn-form-tip__btm">프로젝트는 최대 5개까지 입력하실 수 있습니다.</p>
                                             </div>
-                                        </div> <!-- 0310 zoe 수정 -->
+                                        </div>
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="projectName">프로젝트명</label>
+                                                <label class="fs14 cmn-form-label" for="projectName">프로젝트명</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="projectName">
                                             </div>
-                                        </div>
-                                        <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="projectType">프로젝트 유형</label>
-                                                <select class="fs18 cmn-form-el cmn-select" id="projectType">
-                                                    <option>프로젝트 유형 선택</option>
-                                                </select>
-                                            </div>
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="projectCorp">프로젝트 기관(회사)</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="projectCorp">
-                                            </div>
-                                        </div>
-                                        <div class="cmn-form-row">
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="projectStartDate">시작일</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="projectStartDate">
-                                            </div>
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="projectEndDate">종료일</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="projectEndDate">
-                                            </div>
-                                        </div>
-                                        <div class="cmn-form-row">
-                                            <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="projectRole">담당 역할</label>
+                                                <label class="fs14 cmn-form-label" for="projectRole">담당 역할</label>
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="projectRole">
                                             </div>
                                         </div>
                                         <div class="cmn-form-row">
                                             <div class="col2">
-                                                <label class="fs18 cmn-form-label" for="projectRoleDetail">역할수행 상세내용</label>
-                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="projectRoleDetail">
+                                                <label class="fs14 cmn-form-label" for="projectType">프로젝트 유형</label>
+                                                <select class="fs18 cmn-form-el cmn-select" id="projectType">
+                                                    <option>프로젝트 유형 선택</option>
+                                                </select>
                                             </div>
-                                        </div> <!-- 0310 zoe 수정 -->
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="projectCorp">프로젝트 기관(회사)</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="projectCorp">
+                                            </div>
+                                        </div>
+                                        <div class="cmn-form-row">
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="projectStartDate">시작일</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="projectStartDate">
+                                            </div>
+                                            <div class="col2">
+                                                <label class="fs14 cmn-form-label" for="projectEndDate">종료일</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" placeholder="YYYY-MM" id="projectEndDate">
+                                            </div>
+                                        </div>
                                         <div class="cmn-form-row">
                                             <div class="col1">
-                                                <button class="fs16 apply-control-btn">추가</button>
+                                                <label class="fs14 cmn-form-label" for="projectRoleDetail">역할수행 상세내용</label>
+                                                <input type="text" class="fs18 cmn-form-el cmn-input-txt" id="projectRoleDetail">
                                             </div>
-                                        </div> <!-- 0310 zoe 추가 -->
+                                        </div>
                                     </dd>
                                 </dl>
                             </div> <!-- //grid -->
                         </div> <!-- 추가 기능이 있는 폼 영역 : 기본 -->
+                        <div class="apply-control-btn-box">
+                            <div class="grid1170">
+                                <dl class="cmn-form-wrap__col">
+                                    <dt class="fs24 cmn-form-tit"><span class="txt-hidden">추가 버튼 영역</span></dt>
+                                    <dd class="cmn-form-field">
+                                        <button class="fs16 apply-control-btn">프로젝트 수행이력 추가</button>
+                                    </dd>
+                                </dl>
+                            </div>
+                        </div> <!-- // 추가 버튼 영역 (0315 2차 zoe 추가) -->
                     </div> <!-- //apply add area : 프로젝트 수행이력 -->
                     <div class="cmn-form-area">
                         <div class="grid1170">
@@ -314,7 +321,7 @@
                                 <dd class="cmn-form-field">
                                     <div class="cmn-form-row">
                                         <div class="col2">
-                                            <label class="fs18 cmn-form-label" for="military">병역구분</label>
+                                            <label class="fs14 cmn-form-label" for="military">병역구분</label>
                                             <select class="fs18 cmn-form-el cmn-select" id="military">
                                                 <option>병역 구분 선택</option>
                                             </select>
@@ -354,14 +361,14 @@
                                     </div>
                                     <div class="cmn-form-row">
                                         <div class="col2">
-                                            <label class="fs18 cmn-form-label" for="attachedFile">첨부파일</label>
+                                            <label class="fs14 cmn-form-label" for="attachedFile">첨부파일</label>
                                             <div class="cmn-form-el-box">
                                                 <input type="text" class="fs18 cmn-form-el cmn-input-txt withbtn" id="attachedFile">
                                                 <div class="cmn-form-btn cmn-input-file"><input type="file"><button class="fs16">파일추가</button></div>
                                             </div>
                                         </div>
                                         <div class="col2">
-                                            <label class="fs18 cmn-form-label" for="attachedURL">URL</label>
+                                            <label class="fs14 cmn-form-label" for="attachedURL">URL</label>
                                             <input type="text" class="fs18 cmn-form-el cmn-input-txt withbtn" id="attachedURL">
                                         </div>
                                     </div>

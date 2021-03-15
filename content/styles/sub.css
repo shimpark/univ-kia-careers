@@ -227,7 +227,7 @@ view
         background-color: #f5f5f6;
     }
     .view-tag-list .cmn-tag__green:hover,
-    .view-tag-list .cmn-tag__green:focus { /* 0315 zoe 추가 */
+    .view-tag-list .cmn-tag__green:focus {
         color: #5d7d2b;
         background-color: #eef2e9;
     }
@@ -596,7 +596,11 @@ Talent Pool
     padding-top: 0;
 }
 .apply-add-wrap.added {
+    padding-top: 6rem; /* 0315 2차 zoe 추가 */
     background: #e6e8e9;
+}
+.apply-control-btn-box { /* 0315 2차 zoe 추가 */
+    padding-top: 3rem;
 }
 .apply-control-btn {
     display: block;
@@ -607,11 +611,20 @@ Talent Pool
     text-align: center;
     border: 1px solid #05141f;
 }
+.apply-add-wrap.added .apply-control-btn { /* 0315 2차 zoe 추가 */
+    position: absolute;
+    top: -4.25rem;
+    right: 0;
+    width: 6rem;
+}
 .apply-pagebtn-area {
     padding: 3rem 0 6rem;
 }
 .apply-pagebtn-area [class*="pagelink-btn__"] {
     margin: 0 5px;
+}
+.showCareer { /* 0315 2차 zoe 추가 */
+    padding-top: 2rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -653,10 +666,26 @@ Talent Pool
     .apply-add-wrap.added .cmn-form-field {
         padding-top: 0;
     }
+    .apply-control-btn-box dt { /* 0315 2차 zoe 추가 */
+        display: none;
+    }
+    .apply-control-btn-box .cmn-form-field { /* 0315 2차 zoe 추가 */
+        padding-top: 0;
+        font-size: 0;
+    }
     .apply-control-btn { 
         margin-top: 1.5rem;
         height: 4rem;
         line-height: 4rem;
+    }
+    .apply-control-btn-box .apply-control-btn { /* 0315 2차 zoe 추가 */
+        margin-top: 0;
+    }
+    .apply-add-wrap.added .apply-control-btn { /* 0315 2차 zoe 추가 */
+        top: -4.5rem;
+        margin-top: 0;
+        height: 3.5rem;
+        line-height: 3.5rem;
     }
     .apply-pagebtn-area [class*="pagelink-btn__"] {
         margin: 5px 0;
