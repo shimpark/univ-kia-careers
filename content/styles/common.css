@@ -1316,11 +1316,11 @@ common form
 ============================================================*/
 /* common form layout
 ============================================================*/
-.cmn-form-area { /* 0315 2차 zoe 수정 */
+.cmn-form-area {
     position: relative;
     padding: 5rem 0;
 }
-.cmn-form-area + .cmn-form-area::before { /* 0315 2차 zoe 추가 */
+.cmn-form-area + .cmn-form-area::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1362,9 +1362,10 @@ common form
     display: block;
     padding-bottom: 0.75rem;
     font-weight: 100;
+    cursor: auto; /* 0315 3차 zoe 추가 */
 }
 
-@media screen and (max-width: 575.98px) { /* 0315 2차 zoe 추가 */
+@media screen and (max-width: 575.98px) {
     .cmn-form-area + .cmn-form-area::before {
         width: calc(100% - 60px);
     }
