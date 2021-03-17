@@ -65,12 +65,12 @@
                     </div>
                 </div> 채용 포스트가 없을 때 영역 -->
                 <div class="pt0 sub-cmn-area">
-                    <div class="grid1170">
+                    <div class="grid1170">                        
                         <p class="pb15 fw100 fs16">총 10개의 포스트를 스크랩했습니다.</p>
                         <ul class="cmn-list">
                             <li class="cmn-list-item col1">
                                 <div class="cmn-list-link__col">
-                                    <button class="bookmark-btn"><span class="txt-hidden">채용 포스트 북마크 버튼</span></button>
+                                    <button class="bookmark-btn" data-id="1"><span class="txt-hidden">채용 포스트 북마크 버튼</span></button>
                                     <a href="view.html" class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-04.png" alt="Related Posts 썸네일 이미지"></a>
                                     <div class="cmn-list-info">
                                         <span class="fs14 cmn-list-info__label">People</span>
@@ -200,5 +200,17 @@
         <!-- //footer END -->
         <script src="../../content/scripts/load.js"></script>
         <script src="../../content/scripts/common.js"></script>
+
+        <script>
+            $(document).ready(function(){
+                $(".bookmark-btn").click(function (e) {
+                    e.preventDefault();
+
+                    var id = $(this).data("id");
+                    alert(id);
+
+                });
+            });
+        </script>
     </body>
 </html>

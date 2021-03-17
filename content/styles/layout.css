@@ -9,7 +9,6 @@ html {
 body {
 	font-family: "KiaSignature", "Nanum Gothic", "Malgun Gothic", "돋움", "dotum", "AppleGothic", Helvetica, Arial, sans-serif;
     font-weight: 400;
-    letter-spacing: -0.5px;
     line-height: 1;
     color: #05141f;
 }
@@ -36,6 +35,11 @@ section {
     max-width: 565px;
 }
 
+@media screen and (min-width: 768px) { /* 0317 2차 zoe 추가 */
+    section {
+        min-height: calc(100vh - 3.5rem);
+    }
+}
 @media screen and (max-width: 1199.98px) {
     html {
         font-size: 112.5%;
@@ -772,7 +776,7 @@ percent width
     width: 100%;
 }
 
-@media screen and (max-width: 575.98px) { /* 0310 zoe 추가 */
+@media screen and (max-width: 575.98px) {
     .mo-col100 {
         width: 100%;
     }

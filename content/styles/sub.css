@@ -736,24 +736,24 @@ Login & Join
     background: url("../images/sub/login-bg.jpg") no-repeat center;
     background-size: cover;
 }
-.member-gate-wrapper { /* 0317 zoe 추가 */
+.member-gate-wrapper {
     display: table;
     padding: 11rem 0 6rem;
     margin: 0 auto;
     max-width: 1170px;
 }
-.member-gate-wrapper .sub-cmn-wrapper { /* 0317 zoe 수정 */
+.member-gate-wrapper .sub-cmn-wrapper {
     display: table-row;
     background-color: transparent;
 }
-.member-gate-wrapper [class^="grid"] { /* 0317 zoe 추가 */
+.member-gate-wrapper [class^="grid"] {
     display: table-cell;
     padding-left: 30px;
     padding-right: 30px;
     width: 1170px;
     vertical-align: middle;
 }
-.member-gate { /* 0317 zoe 수정 */  
+.member-gate {  
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
@@ -810,11 +810,11 @@ Login & Join
     width: 3.5rem;
 }
 
-@media screen and (min-width: 768px) { /* 0317 zoe 수정 */
+/* @media screen and (min-width: 768px) {
     #memberGate {
         min-height: calc(100vh - 3.5rem);
     }
-}
+} 0317 2차 zoe 삭제 */
 
 /* ID, PW confirm
 ============================================================*/
