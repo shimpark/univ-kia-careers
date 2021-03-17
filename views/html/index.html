@@ -86,7 +86,7 @@
                                 <li>기아</li>
                                 <li>기아 공채</li>
                                 <li>인재풀</li>
-                            </ul> <!-- 0312 zoe 3차 추가 -->
+                            </ul>
                         </li> <!-- //header search -->
                     </ul>
                 </nav> <!-- //nav -->
@@ -140,7 +140,7 @@
                     <li>기아</li>
                     <li>기아 공채</li>
                     <li>인재풀</li>
-                </ul> <!-- 0312 zoe 3차 추가 -->
+                </ul>
             </div> <!-- //mobile search -->
         </header>
         <!-- //header END -->
@@ -192,8 +192,8 @@
             <article class="main-cmn-area">
                 <div class="grid1170">
                     <h3 class="fw700 fs70 cmn-tit">Join the movement</h3>
-                    <p class="fs18 cmn-txt">기아에서 일한다는 것, 이보다 더 즐거운 순간은 없을 것입니다.<br>대담하고 창의적이며, 열린 마음을 가진 사람들로 가득한 곳.<br>우리는 영감을 주는 움직임을 만든다는 하나의 목표를 향해 달려갑니다.<br>우리 모두가 자신의 일을 통해, 나아가 서로를 통해 진정으로 영감을 얻는 곳이죠.</p>
-                    <ul class="cmn-list join-card-list">
+                    <p class="fs18 cmn-txt"><span class="txt-break__mo">움직임’은 Kia의 지나온 성장 과정,</span> 현재의 또 다른 혁신,<br><span class="txt-break__mo">그리고 미래에서도 변하지 않을 ‘본질’이자</span> ‘존재해 온 이유’입니다.<br><br><span class="txt-break__mo">Kia의 ‘움직임’에 함께 하세요.</span> <span class="txt-break">우리의 ‘움직임’은 사람들이 새로운 생각을 통해</span> 더 나은 삶을 영위할 수 있도록 새로운 공간과 시간을 만들어 나갑니다.<br><br>자동차의 시대를 넘어 미래 모빌리티 영역을 이끌어 갈 무궁무진한 성장의 기회,<br>자유롭게 생각하고, 여러분들의 생각을 펼칠 수 있는 ‘기아’에서 경험해보세요.</p> <!-- //0317 zoe 수정 -->
+                    <!-- <ul class="cmn-list join-card-list">
                         <li class="cmn-list-item col3">
                             <a href="javascript:void(0);" class="join-card__inventive">
                                 <img src="../../content/images/main/join-inventive-bg.png" alt="Inventive 소개 이미지">
@@ -236,56 +236,211 @@
                                 </div>
                             </a>
                         </li>
-                    </ul>
+                    </ul> 0317 zoe 주석 처리 -->
                 </div> <!-- //grid -->
             </article> <!-- //main common area : join the movement -->
             <article class="lightgrey main-cmn-area post-swiper-area">
                 <div class="grid1170">
                     <h3 class="fw700 fs30 cmn-tit">Latest Posts</h3>
-                    <div class="swiper-container" id="postSwiper">
+                    <div class="swiper-container" id="mainPostSwiper">
                         <div class="swiper-wrapper">
                             <div class="swiper-slide post-swiper-item">
-                                <a href="view.html" class="cmn-list-link__row">
-                                    <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
-                                    <div class="cmn-list-info">
-                                        <span class="fs14 fc-red cmn-list-info__label">Culture</span>
-                                        <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
-                                        <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
-                                    </div>
-                                </a>
+                                <ul class="cmn-list">
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-02.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">People</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">자동차 주치의는 어떤 분들일까?</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">어떤 분야의 전문가가 되려면 최소한 1만 시간 정도의 훈련이 필요하다는 ‘1만 시간의 법칙’.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-03.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Careers</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">기아자동차 대형차의 역사 그리고 THE K9</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">오래전 쓰던 수첩을 정리하다가 이 문장을 발견했습니다. 언젠가 잡지에서 읽었던 문장인데, 딱히 기억에 남지 않았습니다.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-02.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">People</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">자동차 주치의는 어떤 분들일까?</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">어떤 분야의 전문가가 되려면 최소한 1만 시간 정도의 훈련이 필요하다는 ‘1만 시간의 법칙’.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
                             </div>
                             <div class="swiper-slide post-swiper-item">
-                                <a href="view.html" class="cmn-list-link__row">
-                                    <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-02.png" alt="Latest Posts 썸네일 이미지"></div>
-                                    <div class="cmn-list-info">
-                                        <span class="fs14 fc-red cmn-list-info__label">People</span>
-                                        <p class="fs20 txt-elp__multi cmn-list-info__tit">자동차 주치의는 어떤 분들일까?</p>
-                                        <p class="fs14 txt-elp__multi cmn-list-info__txt">어떤 분야의 전문가가 되려면 최소한 1만 시간 정도의 훈련이 필요하다는 ‘1만 시간의 법칙’.</p>
-                                    </div>
-                                </a>
+                                <ul class="cmn-list">
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-02.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">People</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">자동차 주치의는 어떤 분들일까?</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">어떤 분야의 전문가가 되려면 최소한 1만 시간 정도의 훈련이 필요하다는 ‘1만 시간의 법칙’.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-03.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Careers</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">기아자동차 대형차의 역사 그리고 THE K9</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">오래전 쓰던 수첩을 정리하다가 이 문장을 발견했습니다. 언젠가 잡지에서 읽었던 문장인데, 딱히 기억에 남지 않았습니다.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-02.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">People</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">자동차 주치의는 어떤 분들일까?</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">어떤 분야의 전문가가 되려면 최소한 1만 시간 정도의 훈련이 필요하다는 ‘1만 시간의 법칙’.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
                             </div>
                             <div class="swiper-slide post-swiper-item">
-                                <a href="view.html" class="cmn-list-link__row">
-                                    <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-03.png" alt="Latest Posts 썸네일 이미지"></div>
-                                    <div class="cmn-list-info">
-                                        <span class="fs14 fc-red cmn-list-info__label">Careers</span>
-                                        <p class="fs20 txt-elp__multi cmn-list-info__tit">기아자동차 대형차의 역사 그리고 THE K9</p>
-                                        <p class="fs14 txt-elp__multi cmn-list-info__txt">오래전 쓰던 수첩을 정리하다가 이 문장을 발견했습니다. 언젠가 잡지에서 읽었던 문장인데, 딱히 기억에 남지 않았습니다.</p>
-                                    </div>
-                                </a>
-                            </div>
-                            <div class="swiper-slide post-swiper-item">
-                                <a href="view.html" class="cmn-list-link__row">
-                                    <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
-                                    <div class="cmn-list-info">
-                                        <span class="fs14 fc-red cmn-list-info__label">Culture</span>
-                                        <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
-                                        <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
-                                    </div>
-                                </a>
+                                <ul class="cmn-list">
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-02.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">People</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">자동차 주치의는 어떤 분들일까?</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">어떤 분야의 전문가가 되려면 최소한 1만 시간 정도의 훈련이 필요하다는 ‘1만 시간의 법칙’.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-03.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Careers</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">기아자동차 대형차의 역사 그리고 THE K9</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">오래전 쓰던 수첩을 정리하다가 이 문장을 발견했습니다. 언젠가 잡지에서 읽었던 문장인데, 딱히 기억에 남지 않았습니다.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-01.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">Culture</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">6시에 퇴근하는 신입사원이 “워라밸이 안 맞다”고 말하는 이유</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">뭐 요즘 워라밸 중요한 거 모르는 사람이 어디 있나요? 문제는 우리가 생각하는 워라밸과 회사가 생각하는 워라밸의 개념이 다르다는 거죠.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="cmn-list-item col3">
+                                        <a href="view.html" class="cmn-list-link__row">
+                                            <div class="cmn-list-thumb"><img src="../../content/images/common/post-thumb-02.png" alt="Latest Posts 썸네일 이미지"></div>
+                                            <div class="cmn-list-info">
+                                                <span class="fs14 fc-red cmn-list-info__label">People</span>
+                                                <p class="fs20 txt-elp__multi cmn-list-info__tit">자동차 주치의는 어떤 분들일까?</p>
+                                                <p class="fs14 txt-elp__multi cmn-list-info__txt">어떤 분야의 전문가가 되려면 최소한 1만 시간 정도의 훈련이 필요하다는 ‘1만 시간의 법칙’.</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                
                             </div>
                         </div> <!-- //swiper wrapper -->
-                    </div>
+                    </div> <!-- 0317 zoe 수정 -->
                     <!-- add swiper arrows -->
                     <button class="swiper-button-next" id="postSwiperNext"><span class="txt-hidden">다음 슬라이드로 이동하기</span></button>
                     <button class="swiper-button-prev" id="postSwiperPrev"><span class="txt-hidden">이전 슬라이드로 이동하기</span></button>
@@ -382,6 +537,25 @@
             });
             $(".main-swiper-item").on("mouseleave", function() {
                 mainVslSwiper.autoplay.start();
+            });
+
+            //main post swiper (0317 zoe 추가)
+            var mainPostSwiper = new Swiper("#mainPostSwiper", {
+                slidesPerView: 1,
+                spaceBetween: 30,
+                speed: 750,
+                loop: false,
+                navigation: {
+                    nextEl: "#postSwiperNext",
+                    prevEl: "#postSwiperPrev",
+                },
+                breakpoints: {
+                    575.98: {
+                        slidesPerView: "auto",
+                        spaceBetween: 0,
+                        loop: true
+                    }
+                }
             });
 
             $(document).ready(function(){

@@ -189,7 +189,7 @@ view
 .view-cont {
     padding-top: 5rem;
     font-weight: 100;
-    line-height: 1.9;
+    line-height: 1.66;
 }
 .view-tag-list {
     display: flex;
@@ -596,10 +596,10 @@ Talent Pool
     padding-top: 0;
 }
 .apply-add-wrap.added {
-    padding-top: 6rem; /* 0315 2차 zoe 추가 */
+    padding-top: 6rem;
     background: #e6e8e9;
 }
-.apply-control-btn-box { /* 0315 2차 zoe 추가 */
+.apply-control-btn-box {
     padding-top: 3rem;
 }
 .apply-control-btn {
@@ -611,7 +611,7 @@ Talent Pool
     text-align: center;
     border: 1px solid #05141f;
 }
-.apply-add-wrap.added .apply-control-btn { /* 0315 2차 zoe 추가 */
+.apply-add-wrap.added .apply-control-btn {
     position: absolute;
     top: -4.25rem;
     right: 0;
@@ -623,7 +623,7 @@ Talent Pool
 .apply-pagebtn-area [class*="pagelink-btn__"] {
     margin: 0 5px;
 }
-.showCareer { /* 0315 2차 zoe 추가 */
+.showCareer {
     padding-top: 2rem;
 }
 
@@ -666,10 +666,10 @@ Talent Pool
     .apply-add-wrap.added .cmn-form-field {
         padding-top: 0;
     }
-    .apply-control-btn-box dt { /* 0315 2차 zoe 추가 */
+    .apply-control-btn-box dt {
         display: none;
     }
-    .apply-control-btn-box .cmn-form-field { /* 0315 2차 zoe 추가 */
+    .apply-control-btn-box .cmn-form-field {
         padding-top: 0;
         font-size: 0;
     }
@@ -678,10 +678,10 @@ Talent Pool
         height: 4rem;
         line-height: 4rem;
     }
-    .apply-control-btn-box .apply-control-btn { /* 0315 2차 zoe 추가 */
+    .apply-control-btn-box .apply-control-btn {
         margin-top: 0;
     }
-    .apply-add-wrap.added .apply-control-btn { /* 0315 2차 zoe 추가 */
+    .apply-add-wrap.added .apply-control-btn {
         top: -4.5rem;
         margin-top: 0;
         height: 3.5rem;
@@ -736,15 +736,28 @@ Login & Join
     background: url("../images/sub/login-bg.jpg") no-repeat center;
     background-size: cover;
 }
-#memberGate .sub-cmn-wrapper {
+.member-gate-wrapper { /* 0317 zoe 추가 */
+    display: table;
+    padding: 11rem 0 6rem;
+    margin: 0 auto;
+    max-width: 1170px;
+}
+.member-gate-wrapper .sub-cmn-wrapper { /* 0317 zoe 수정 */
+    display: table-row;
     background-color: transparent;
 }
-.member-gate {
+.member-gate-wrapper [class^="grid"] { /* 0317 zoe 추가 */
+    display: table-cell;
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 1170px;
+    vertical-align: middle;
+}
+.member-gate { /* 0317 zoe 수정 */  
     display: flex;
     flex-wrap: wrap;
     flex-direction: row-reverse;
     align-items: center;
-    padding: 11rem 0 6rem;
 }
 .member-gate-intro {
     width: 50%;
@@ -797,11 +810,12 @@ Login & Join
     width: 3.5rem;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) { /* 0317 zoe 수정 */
     #memberGate {
-        height: calc(100vh - 3.5rem);
+        min-height: calc(100vh - 3.5rem);
     }
 }
+
 /* ID, PW confirm
 ============================================================*/
 .confirm-wrap {
