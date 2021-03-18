@@ -190,6 +190,7 @@ view
     padding-top: 5rem;
     font-weight: 100;
     line-height: 1.66;
+    word-break: break-word; /* 0317 3차 zoe 추가 */
 }
 .view-tag-list {
     display: flex;
@@ -810,12 +811,6 @@ Login & Join
     width: 3.5rem;
 }
 
-/* @media screen and (min-width: 768px) {
-    #memberGate {
-        min-height: calc(100vh - 3.5rem);
-    }
-} 0317 2차 zoe 삭제 */
-
 /* ID, PW confirm
 ============================================================*/
 .confirm-wrap {
@@ -884,6 +879,7 @@ Mypage
     background: #05141f url("../images/sub/my-bookmark-ico.png") no-repeat center;
     background-size: 100%;
     border-radius: 100%;
+    z-index: 1; /* 0317 3차 zoe 추가 */
 }
 
 @media screen and (max-width: 575.98px) {

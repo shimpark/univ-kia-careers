@@ -32,7 +32,7 @@ body{
 body {
     overflow-x: hidden;
     margin: 0;
-    word-break: keep-all;
+    word-break: keep-all; /* 0317 3차 zoe 수정 */
 }
 
 /* HTML5 display-role reset for older browsers */
@@ -180,9 +180,3 @@ label img {
 [hidden] {
     display: none;
 }
-
-/* @media screen and (min-width: 1200px) {
-    a:focus {
-        outline: 2px solid #000;
-    }
-} 0310 zoe 삭제 */
