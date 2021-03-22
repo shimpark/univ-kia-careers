@@ -190,7 +190,7 @@ view
     padding-top: 5rem;
     font-weight: 100;
     line-height: 1.66;
-    word-break: break-word; /* 0317 3차 zoe 추가 */
+    word-break: break-word;
 }
 .view-tag-list {
     display: flex;
@@ -590,6 +590,17 @@ Talent Pool
     background-size: 8px;
     border-radius: 2rem;
 }
+.apply-form-area + .apply-form-area::before { /* 0322 2차 zoe 추가 */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    width: 1170px;
+    height: 1px;
+    background-color: #9ba1a5;
+}
 .apply-add-wrap {
     padding: 3rem 0;
 }
@@ -657,6 +668,9 @@ Talent Pool
     }
     .apply-hd-btn-wrap li:first-child .apply-hd-btn {
         margin-left: 0;
+    }
+    .apply-form-area + .apply-form-area::before { /* 0322 2차 zoe 추가 */
+        width: calc(100% - 60px);
     }
     .apply-add-wrap.added .cmn-form-tit {
         overflow: hidden;
@@ -879,7 +893,7 @@ Mypage
     background: #05141f url("../images/sub/my-bookmark-ico.png") no-repeat center;
     background-size: 100%;
     border-radius: 100%;
-    z-index: 1; /* 0317 3차 zoe 추가 */
+    z-index: 1;
 }
 
 @media screen and (max-width: 575.98px) {

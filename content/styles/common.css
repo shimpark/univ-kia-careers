@@ -1050,9 +1050,8 @@ common card list
 .cmn-list-link__col { 
     display: flex;
     flex-wrap: wrap;
-    /* align-items: center; 0316 zoe 삭제 */
 }
-.cmn-list-info__label { /* 0315 zoe 수정 */
+.cmn-list-info__label {
     display: block;
     padding-bottom: 0.5rem;
     font-weight: 700;
@@ -1096,19 +1095,19 @@ common card list
 .cmn-list-link__row .cmn-list-info {
     padding: 1.75rem 2rem;
 }
-.cmn-list-link__col .cmn-list-thumb { /* 0315 zoe 수정 */
+.cmn-list-link__col .cmn-list-thumb {
     overflow: hidden;
     width: 370px;
 }
-.cmn-list-link__col .cmn-list-thumb img { /* 0136 zoe 추가 */
+.cmn-list-link__col .cmn-list-thumb img {
     height: 100%;
 }
-.cmn-list-link__col .cmn-list-info { /* 0315 zoe 수정 */
+.cmn-list-link__col .cmn-list-info {
     position: relative;
     padding: 1rem 2rem;
     width: calc(100% - 370px);
 }
-.cmn-list-link__col .cmn-list-info__layer { /* 0136 zoe 추가 */
+.cmn-list-link__col .cmn-list-info__layer {
     position: absolute;
     top: 50%;
     left: 0;
@@ -1178,14 +1177,14 @@ common card list
     .cmn-list-link__col .cmn-list-thumb {
         width: 100%;
     }
-    .cmn-list-link__col .cmn-list-thumb img { /* 0136 zoe 추가 */
+    .cmn-list-link__col .cmn-list-thumb img {
         height: auto;
     }
     .cmn-list-link__col .cmn-list-info {
         padding: 1.75rem 2rem;
         width: 100%;
     }
-    .cmn-list-link__col .cmn-list-info__layer { /* 0136 zoe 추가 */
+    .cmn-list-link__col .cmn-list-info__layer {
         position: relative;
         top: auto;
         left: auto;
@@ -1346,7 +1345,7 @@ common form
     position: relative;
     padding: 5rem 0;
 }
-.cmn-form-area + .cmn-form-area::before {
+/* .cmn-form-area + .cmn-form-area::before {
     content: "";
     position: absolute;
     top: 0;
@@ -1356,7 +1355,7 @@ common form
     width: 1170px;
     height: 1px;
     background-color: #9ba1a5;
-}
+} 0322 2차 zoe 삭제 */
 .cmn-form-wrap__col {
     display: flex;
     flex-wrap: wrap;
@@ -1391,11 +1390,11 @@ common form
     cursor: auto;
 }
 
-@media screen and (max-width: 575.98px) {
+/* @media screen and (max-width: 575.98px) {
     .cmn-form-area + .cmn-form-area::before {
         width: calc(100% - 60px);
     }
-}
+} 0322 2차 zoe 삭제 */
 /* common form element
 ============================================================*/
 .cmn-form-el-box {

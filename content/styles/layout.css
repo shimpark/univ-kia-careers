@@ -35,7 +35,7 @@ section {
     max-width: 565px;
 }
 
-@media screen and (min-width: 768px) { /* 0317 2차 zoe 추가 */
+@media screen and (min-width: 768px) {
     section {
         min-height: calc(100vh - 3.5rem);
     }
@@ -1045,4 +1045,32 @@ show and hide
     .mo-show {
         display: block !important;
     }
+}
+
+/*============================================================
+policy (0322 2차 zoe 추가)
+============================================================*/
+.policy-hd-tit {
+    padding: 4rem 0 1.5rem;
+}
+.policy-sub-tit {
+    display: block;
+    padding: 2rem 0 0.5rem;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+.policy-tbl {
+    margin: 2rem 0;
+    width: 100%;
+}
+.policy-tbl th,
+.policy-tbl td {
+    padding: 0.75rem 1rem;
+}
+.policy-tbl thead th {
+    background-color: #9ea1a2;
+}
+.policy-tbl tbody td {
+    border-bottom: 1px solid #9ea1a2;
 }
