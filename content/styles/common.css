@@ -1047,15 +1047,16 @@ common card list
     display: block;
     height: 100%;
 }
-.cmn-list-link__col {
+.cmn-list-link__col { 
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
+    /* align-items: center; 0316 zoe 삭제 */
 }
-.cmn-list-info__label {
+.cmn-list-info__label { /* 0315 zoe 수정 */
     display: block;
     padding-bottom: 0.5rem;
     font-weight: 700;
+    line-height: 1;
 }
 .cmn-list-info {
     position: relative;
@@ -1095,12 +1096,26 @@ common card list
 .cmn-list-link__row .cmn-list-info {
     padding: 1.75rem 2rem;
 }
-.cmn-list-link__col .cmn-list-thumb {
+.cmn-list-link__col .cmn-list-thumb { /* 0315 zoe 수정 */
+    overflow: hidden;
     width: 370px;
 }
-.cmn-list-link__col .cmn-list-info {
+.cmn-list-link__col .cmn-list-thumb img { /* 0136 zoe 추가 */
+    height: 100%;
+}
+.cmn-list-link__col .cmn-list-info { /* 0315 zoe 수정 */
+    position: relative;
     padding: 1rem 2rem;
     width: calc(100% - 370px);
+}
+.cmn-list-link__col .cmn-list-info__layer { /* 0136 zoe 추가 */
+    position: absolute;
+    top: 50%;
+    left: 0;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    padding: 0 2rem;
+    width: 100%;
 }
 
 @media screen and (min-width: 1200px) {
@@ -1163,9 +1178,20 @@ common card list
     .cmn-list-link__col .cmn-list-thumb {
         width: 100%;
     }
+    .cmn-list-link__col .cmn-list-thumb img { /* 0136 zoe 추가 */
+        height: auto;
+    }
     .cmn-list-link__col .cmn-list-info {
         padding: 1.75rem 2rem;
         width: 100%;
+    }
+    .cmn-list-link__col .cmn-list-info__layer { /* 0136 zoe 추가 */
+        position: relative;
+        top: auto;
+        left: auto;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        padding: 0;
     }
 }
 
@@ -1362,7 +1388,7 @@ common form
     display: block;
     padding-bottom: 0.75rem;
     font-weight: 100;
-    cursor: auto; /* 0315 3차 zoe 추가 */
+    cursor: auto;
 }
 
 @media screen and (max-width: 575.98px) {
