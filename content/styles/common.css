@@ -28,11 +28,11 @@ header {
     display: block;
     padding-left: 4.75rem;
     background-repeat: no-repeat;
-    background-position: top left;
+    background-position: left top;
     background-image: url("../images/common/header-logo-white.png");
     background-size: 4.25rem;
-    -webkit-transition: background-image .35s ease;
-    transition: background-image .35s ease;
+    /* -webkit-transition: background-image .35s ease;
+    transition: background-image .35s ease; 0323 zoe 삭제 */
 }
 /* scroll header
 ============================================================*/
@@ -45,6 +45,7 @@ header.scroll {
 }
 .scroll [class^="hd-logo"] a {
     background-image: url("../images/common/header-logo-black.png");
+    background-size: 4.25rem;
 }
 
 @media screen and (min-width: 1200px) {
@@ -302,8 +303,8 @@ mobile navigation & mobile search
         background-position: center;
         background-image: url("../images/common/mobile-nav-open-btn-white.png");
         background-size: 100%;
-        -webkit-transition: background-image .35s ease;
-        transition: background-image .35s ease;
+        /* -webkit-transition: background-image .35s ease;
+        transition: background-image .35s ease; 0323 zoe 삭제 */
     }
     .mo-nav-btn__close {
         display: block;
@@ -318,8 +319,8 @@ mobile navigation & mobile search
         background-position: center;
         background-image: url("../images/common/header-close-ico-white.png");
         background-size: 100%;
-        -webkit-transition: background-image .35s ease;
-        transition: background-image .35s ease;
+        /* -webkit-transition: background-image .35s ease;
+        transition: background-image .35s ease; 0323 zoe 삭제 */
     }
     .mo-search {
         position: relative;
@@ -337,16 +338,16 @@ mobile navigation & mobile search
         background-position: center;
         background-image: url("../images/common/header-search-ico-white.png");
         background-size: 100%;
-        -webkit-transition: background-image .35s ease;
-        transition: background-image .35s ease;
+        /* -webkit-transition: background-image .35s ease;
+        transition: background-image .35s ease; 0323 zoe 삭제 */
         cursor: pointer;
     }
     .mo-search-btn__open.active {
         width: 2rem;
         height: 2rem;
         background-image: url("../images/common/header-close-ico-white.png");
-        -webkit-transition: background-image .35s ease;
-        transition: background-image .35s ease;
+        /* -webkit-transition: background-image .35s ease;
+        transition: background-image .35s ease; 0323 zoe 삭제 */
     }
     .mo-search-recommend-list {
         display: none;
@@ -616,7 +617,7 @@ footer {
     }
     .ft-nav-menu {
         font-family: "KiaSignatureBold";
-        font-size: 2rem;
+        font-size: 1.6rem; /* 0323 zoe 수정 */
         color: #fff;
     }
     .ft-info {
@@ -1345,17 +1346,6 @@ common form
     position: relative;
     padding: 5rem 0;
 }
-/* .cmn-form-area + .cmn-form-area::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    width: 1170px;
-    height: 1px;
-    background-color: #9ba1a5;
-} 0322 2차 zoe 삭제 */
 .cmn-form-wrap__col {
     display: flex;
     flex-wrap: wrap;
@@ -1389,12 +1379,6 @@ common form
     font-weight: 100;
     cursor: auto;
 }
-
-/* @media screen and (max-width: 575.98px) {
-    .cmn-form-area + .cmn-form-area::before {
-        width: calc(100% - 60px);
-    }
-} 0322 2차 zoe 삭제 */
 /* common form element
 ============================================================*/
 .cmn-form-el-box {
