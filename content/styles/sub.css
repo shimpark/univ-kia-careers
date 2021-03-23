@@ -590,7 +590,7 @@ Talent Pool
     background-size: 8px;
     border-radius: 2rem;
 }
-.apply-form-area + .apply-form-area::before { /* 0322 2차 zoe 추가 */
+.apply-form-area + .apply-form-area::before {
     content: "";
     position: absolute;
     top: 0;
@@ -669,7 +669,7 @@ Talent Pool
     .apply-hd-btn-wrap li:first-child .apply-hd-btn {
         margin-left: 0;
     }
-    .apply-form-area + .apply-form-area::before { /* 0322 2차 zoe 추가 */
+    .apply-form-area + .apply-form-area::before {
         width: calc(100% - 60px);
     }
     .apply-add-wrap.added .cmn-form-tit {
@@ -781,12 +781,12 @@ Login & Join
 .member-gate .sub-hd h2 {
     line-height: 1.2;
 }
-.member-gate-form {
+.member-gate-form { /* 0323 2차 zoe 수정 */
     padding: 4.5rem 4rem;
     width: 50%;
     text-align: center;
     background-color: #f2f3f4;
-    border-radius: 2rem;
+    border-radius: 1rem;
 }
 .member-gate-form .hd-tit__sm {
     padding-top: 3rem;
@@ -831,11 +831,11 @@ Login & Join
     padding: 2rem 0 7rem;
     text-align: center;
 }
-.confirm-txt {
-    padding-top: 3.5rem;
+.confirm-txt { /* 0323 2차 zoe 수정 */
+    /* padding-top: 3.5rem; */
     font-weight: 100;
-    background: url("../images/sub/view-alertmodal-tit-ico.png") no-repeat center top;
-    background-size: 2.4rem;
+    /* background: url("../images/sub/view-alertmodal-tit-ico.png") no-repeat center top;
+    background-size: 2.4rem; */
 }
 
 @media screen and (min-width: 1200px) {
@@ -873,10 +873,10 @@ Login & Join
         margin: 0 5px;
         width: 4.5rem;
     }
-    .confirm-txt {
+    /* .confirm-txt { 0323 zoe 주석 처리
         padding-top: 4rem;
         background-size: 3rem;
-    }
+    } */
 }
 
 /*============================================================
