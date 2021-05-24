@@ -82,7 +82,6 @@ function pcNav() {
                 $(".hd-mymenu-btn__close").focus();
             }
         });
-        //0312 zoe 3차 추가
         $("header").on("keydown", ".hd-search-input input", function(){
             $(".hd-search-recommend-list").show();
 
@@ -123,7 +122,6 @@ if (window.matchMedia("screen and (max-width: 1199.98px)").matches) {
         $(e.target).find(".more-ico").toggleClass("active");
         $(".mo-mymenu-box").slideToggle(350);
     });
-    //0312 zoe 3차 추가
     $("header").on("keydown", ".mo-search-input input", function(){
         $(".mo-search-recommend-list").show();
 
@@ -172,6 +170,15 @@ function clickModal(odj) {
 
     $("body").addClass("full");
     thisModal.fadeIn(250);
+}
+
+//notice modal (0521 zoe 추가)
+function ntcModal() {
+    var mainNtcModal = $("#mainNtcModal");
+    if (mainNtcModal.length > 0) {
+        $("body").addClass("full");
+        mainNtcModal.show();
+    }
 }
 
 //form
