@@ -431,7 +431,7 @@ function AutoDateYYYYMM(obj) {
 
   obj.value = date;
 
-  // 모두 입력됐을 경우 날짜 유효성 확인
+  // 모두 입력됐을 경우 날짜 유효성 확인...
   if (date.length == 10) {
     var isVaild = true;
 
